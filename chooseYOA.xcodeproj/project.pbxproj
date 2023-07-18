@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F30B3792A5DAF320051DCC4 /* chooseYOA copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "chooseYOA copy-Info.plist"; path = "/Users/nomiklee/Desktop/PeterSwiftLearn/chooseYOA/chooseYOA copy-Info.plist"; sourceTree = "<absolute>"; };
 		6FBE92CC2A5D714900FCD1DE /* chooseYOA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chooseYOA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FBE92CF2A5D714900FCD1DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FBE92D12A5D714900FCD1DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +43,7 @@
 			children = (
 				6FBE92CE2A5D714900FCD1DE /* chooseYOA */,
 				6FBE92CD2A5D714900FCD1DE /* Products */,
+				6F30B3792A5DAF320051DCC4 /* chooseYOA copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -292,6 +294,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R47YA6WR5Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = chooseYOA/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -319,6 +322,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R47YA6WR5Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = chooseYOA/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

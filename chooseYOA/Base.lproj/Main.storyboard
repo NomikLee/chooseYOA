@@ -1,24 +1,471 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22138.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QVN-Gy-Auq">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22113"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="chooseYOA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Taipei Fubon Braves" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0fX-en-du8">
+                                <rect key="frame" x="0.0" y="135" width="393" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.5450980392" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="33"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="圖1" translatesAutoresizingMaskIntoConstraints="NO" id="6iF-2A-agg">
+                                <rect key="frame" x="85" y="181" width="221" height="356"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogh-Ca-Nt3">
+                                <rect key="frame" x="105" y="611" width="183" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="START">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Tnf-Pc-xfn" kind="show" id="rew-ZN-hfc"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" style="browser" id="Ywp-sL-yeX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="914" y="-27"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tlA-oh-7Ln">
+            <objects>
+                <viewController id="Tnf-Pc-xfn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6I7-DE-1Eh">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="你是糯米，一位熱愛籃球的年輕球迷。一天，你突然在一本神秘的書籍中發現了一個神奇的秘密。這本書可以讓你穿越回到過去，並成為台灣富邦籃球隊的一員。你非常興奮，立即打開書本，跳進了故事中。" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="JdN-Kw-LdJ">
+                                <rect key="frame" x="19" y="411" width="355" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="圖5" translatesAutoresizingMaskIntoConstraints="NO" id="vw4-eP-ERx">
+                                <rect key="frame" x="0.0" y="194" width="393" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKp-yn-EJP">
+                                <rect key="frame" x="44" y="625" width="301" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemCyanColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="你迫不及待地想成為台灣富邦籃球隊的球員，決定穿越到過去">
+                                    <fontDescription key="titleFontDescription" name="AlNile" family="Al Nile" pointSize="15"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="kYq-a1-GuP" kind="show" id="avd-X4-aoc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IoA-Ka-Tl6">
+                                <rect key="frame" x="44" y="690" width="301" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemCyanColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="你猶豫不決，覺得這太不真實了，決定關上書本，回到現實">
+                                    <fontDescription key="titleFontDescription" name="AlNile" family="Al Nile" pointSize="15"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Vwg-JO-9n3" kind="show" id="5wm-R8-yjh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="chI-Ga-NMW"/>
+                        <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bQ7-0g-fz7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gF5-ge-B9D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1647" y="-27"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9Sb-oc-mwB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QVN-Gy-Auq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NTv-d7-AUH">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="RKq-ly-trZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GtO-hi-52Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21" y="-45"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BAT-R3-gb0">
+            <objects>
+                <viewController id="kYq-a1-GuP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XMh-eI-OA8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="你穿越到了過去，來到了台灣富邦籃球隊的訓練場地。你發現這裡熱鬧非凡，所有球員都在努力練習。你看到了林志傑，你的偶像，正在籃球場上投籃。" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="kVs-gL-dTD">
+                                <rect key="frame" x="19" y="411" width="355" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKj-U1-AJp">
+                                <rect key="frame" x="44" y="625" width="301" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemCyanColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="你迫不及待地跑去找林志傑，希望能與他交流一下">
+                                    <fontDescription key="titleFontDescription" name="AlNile" family="Al Nile" pointSize="15"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="avo-bh-yso" kind="show" id="CAc-yN-Z5f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRV-Ly-TcC">
+                                <rect key="frame" x="44" y="690" width="301" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemCyanColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="你決定先觀察一下林志傑的訓練，看看能否從他身上學到一些技巧">
+                                    <fontDescription key="titleFontDescription" name="AlNile" family="Al Nile" pointSize="15"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="avo-bh-yso" kind="show" id="WDO-Fq-zhk"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="圖6" translatesAutoresizingMaskIntoConstraints="NO" id="Ru9-Ei-DU4">
+                                <rect key="frame" x="44" y="177" width="301" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CFe-Wq-KY1"/>
+                        <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TZo-Xf-KrG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="baL-Uv-lwm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2408" y="-863"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iEl-mw-SxU">
+            <objects>
+                <viewController id="avo-bh-yso" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LvR-L0-nQG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="你與林志傑進行了一次愉快的交流，他對你的熱情和熱愛籃球的態度深感印象。他邀請你參加球隊的訓練，並答應指導你成為更好的球員。你開始和台灣富邦籃球隊的球員們一起訓練，逐漸融入了這個團隊。" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="T75-x6-dKH">
+                                <rect key="frame" x="19" y="411" width="355" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZmU-gf-ka1">
+                                <rect key="frame" x="44" y="625" width="301" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemCyanColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="你努力練習，希望能在球隊中有出色的表現">
+                                    <fontDescription key="titleFontDescription" name="AlNile" family="Al Nile" pointSize="15"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="JYi-kw-frt" kind="show" id="Gxu-g4-blH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzO-Vi-h8v">
+                                <rect key="frame" x="44" y="690" width="301" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemCyanColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="你感到壓力很大，不確定自己是否能夠適應這個環境，想放棄">
+                                    <fontDescription key="titleFontDescription" name="AlNile" family="Al Nile" pointSize="15"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="8lA-ej-e6j" kind="show" id="mAN-ge-laP"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="圖7" translatesAutoresizingMaskIntoConstraints="NO" id="Z4C-az-A0F">
+                                <rect key="frame" x="44" y="183" width="301" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OZV-2O-iKJ"/>
+                        <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rsd-Ll-enC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RFC-MD-TRi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3146" y="-863"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2zD-2U-Bt7">
+            <objects>
+                <viewController id="hgG-mU-EgO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3uu-bM-gXV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="你決定重新振作，再次嘗試加入球隊。經過更加努力的訓練和磨練，最終成功加入了台灣富邦籃球隊。你和林志傑攜手建立了一支強大的球隊，並連霸了三屆冠軍。你的努力和毅力為你贏得了成功，這段穿越過去的籃球夢成為你一生中最珍貴的回憶。" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Xaz-Fu-uSo">
+                                <rect key="frame" x="19" y="411" width="355" height="234.66666666666663"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="圖10" translatesAutoresizingMaskIntoConstraints="NO" id="QFG-Ha-p4p">
+                                <rect key="frame" x="44" y="183" width="301" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BeO-lO-J4L"/>
+                        <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="A0P-UL-vR0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p5j-Uu-Qjg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4350" y="-156"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XSH-d3-nXX">
+            <objects>
+                <viewController id="JYi-kw-frt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Rg-mB-9X1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="經過一段時間的努力，你逐漸展現出自己的實力，得到了教練和隊友的認可。你和林志傑成為了好朋友，他常常給予你鼓勵和指導。你們共同帶領著台灣富邦籃球隊，在比賽中取得了巨大的成功。" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="50h-yy-s3m">
+                                <rect key="frame" x="19" y="411" width="355" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqa-jV-onN">
+                                <rect key="frame" x="44" y="625" width="301" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemCyanColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="你們團結一心，繼續努力，希望能連霸三屆冠軍">
+                                    <fontDescription key="titleFontDescription" name="AlNile" family="Al Nile" pointSize="15"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="DZv-th-ZCS" kind="show" id="M5x-RS-6c7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Se4-pi-yhz">
+                                <rect key="frame" x="44" y="690" width="301" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemCyanColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="你感到滿足，認為已經達到了目標，決定轉向其他事業">
+                                    <fontDescription key="titleFontDescription" name="AlNile" family="Al Nile" pointSize="15"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Vwg-JO-9n3" kind="show" id="Gqm-TM-foc"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="圖3" translatesAutoresizingMaskIntoConstraints="NO" id="WgH-b1-iUy">
+                                <rect key="frame" x="44" y="183" width="300" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CYf-s8-Odb"/>
+                        <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WNY-5v-6MK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hMS-6P-96Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4024" y="-863"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ca4-8g-vUw">
+            <objects>
+                <viewController id="8lA-ej-e6j" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TmU-xc-yQq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="你感到壓力很大，無法適應球隊的競爭環境。儘管林志傑給予了你很多鼓勵，但你還是覺得自己無法達到球隊的要求。最終，你決定放棄在球隊中的夢想。" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="zif-dz-xPp">
+                                <rect key="frame" x="19" y="411" width="355" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lff-cg-UDr">
+                                <rect key="frame" x="44" y="625" width="301" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemCyanColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="你感到遺憾，但認為這是明智的決定，決定尋找其他機會">
+                                    <fontDescription key="titleFontDescription" name="AlNile" family="Al Nile" pointSize="15"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Vwg-JO-9n3" kind="show" id="XWK-Rj-q28"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPq-65-eJQ">
+                                <rect key="frame" x="44" y="690" width="301" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemCyanColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="你後悔自己的選擇，決定重新振作，再次嘗試加入球隊">
+                                    <fontDescription key="titleFontDescription" name="AlNile" family="Al Nile" pointSize="15"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="hgG-mU-EgO" kind="show" id="gDt-c3-GH1"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="圖11" translatesAutoresizingMaskIntoConstraints="NO" id="nJs-e3-CFt">
+                                <rect key="frame" x="105" y="197" width="179" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="y5b-3K-yTV"/>
+                        <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Orq-7y-Zl8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3qz-Ty-0Gz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2900" y="-156"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xDt-h7-7jP">
+            <objects>
+                <viewController id="DZv-th-ZCS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lSc-ZD-nCy">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="你和林志傑一起帶領著台灣富邦籃球隊連霸了三屆冠軍，建立了王朝。你們的努力和奮鬥得到了巨大的回報，成為了籃球界的傳奇。你們獲得了無數的粉絲和讚揚，這段穿越過去的籃球夢成為你一生中最珍貴的回憶。" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="a0s-B2-3n4">
+                                <rect key="frame" x="19" y="411" width="355" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="圖9" translatesAutoresizingMaskIntoConstraints="NO" id="TgZ-BK-Qbg">
+                                <rect key="frame" x="44" y="183" width="301" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lXJ-7r-aLI"/>
+                        <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WOn-bc-PyX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HgC-xu-oL6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4839" y="-863"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="yLq-HO-Njy">
+            <objects>
+                <viewController id="Vwg-JO-9n3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wvg-uL-EMS">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="圖8" translatesAutoresizingMaskIntoConstraints="NO" id="rdc-gN-Ljf">
+                                <rect key="frame" x="46" y="198" width="300" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2F2-uo-idj">
+                                <rect key="frame" x="46" y="496" width="301" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemCyanColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="遊戲結束回到現實">
+                                    <fontDescription key="titleFontDescription" name="AlNile" family="Al Nile" pointSize="15"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Nmf-IR-9eq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VzT-p4-0CF"/>
+                        <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Rzo-Ve-Egz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="peZ-c2-MTH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2900" y="713"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="5wm-R8-yjh"/>
+        <segue reference="WDO-Fq-zhk"/>
+        <segue reference="RKq-ly-trZ"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="圖1" width="1032" height="836"/>
+        <image name="圖10" width="1192" height="698"/>
+        <image name="圖11" width="630" height="1090"/>
+        <image name="圖3" width="630" height="300"/>
+        <image name="圖5" width="476" height="328"/>
+        <image name="圖6" width="852" height="700"/>
+        <image name="圖7" width="726" height="692"/>
+        <image name="圖8" width="534" height="542"/>
+        <image name="圖9" width="1080" height="606"/>
+        <systemColor name="systemCyanColor">
+            <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="viewFlipsideBackgroundColor">
+            <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
